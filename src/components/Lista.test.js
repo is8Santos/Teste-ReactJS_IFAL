@@ -4,19 +4,19 @@ import { fireEvent, render, waitFor } from '@testing-library/react'
 
 import Lista from './Lista'
 
-describe('Tests para  o componete Lista', () => { // é descrição do que teste
-    it('Should add new task when form has been submitted', async () => { // é o que p teste irá fazer
+describe('Tests para  o componete Lista', () => { 
+    it('Should add new task when form has been submitted', async () => { 
         const { getByTestId, getByText } = render(<Lista/>)
 
-        const checkInput = await waitFor(
+        const checagem = await waitFor(
             () => getByTestId('form-field')
         )
-        const valueTesting = 'testing'
+        const testagem = 'testing'
         fireEvent.change(
-            checkInput,
-            { target: { value: valueTesting}}
+            checagem,
+            { target: { value: testagem}}
         )
-        expect(checkInput.value).toEqual(valueTesting)
+        expect(checagem.value).toEqual(testagem)
 
 
 

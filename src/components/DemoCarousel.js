@@ -14,27 +14,27 @@ export default class DemoCarousel extends Component {
             <Carousel >
                 <div>
                     <img src={pweb} alt="Imagem de uma materia do if" />
-                    <p className="legend">Legend 3</p>
+                    <p className="legend">Programação Web II</p>
                 </div>
                 <div>
                     <img src={pmovel}  alt="Imagem de uma materia do if"  />
-                    <p className="legend">Legend 1</p>
+                    <p className="legend">Programação Mobile</p>
                 </div>
                 <div>
                     <img src={gost}   alt="Imagem de uma materia do if" />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">Gestão Organizacional e Segurança do Trabalho</p>
                 </div>
                 <div>
                     <img src={ingles}  alt="Imagem de uma materia do if"  />
-                    <p className="legend">Legend 3</p>
+                    <p className="legend">Lingua Inglesa</p>
                 </div>
                 <div>
                     <img src={toes}  alt="Imagem de uma materia do if"  />
-                    <p className="legend">Legend 1</p>
+                    <p className="legend">Tópicos especiais</p>
                 </div>
                 <div>
                     <img src={filosofia}  alt="Imagem de uma materia do if" />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">Filosofia</p>
                 </div>
             </Carousel>
         );

@@ -21,11 +21,11 @@ describe('Tests para  o componete Lista', () => {
 
 
 
-//Bela
-        const checkButton = await waitFor(
+
+        const checkButtonn = await waitFor(
             () => getByTestId('form-btn')
         )
-        fireEvent.click(checkButton)
+        fireEvent.click(checkButtonn)
 
 
 //vivi

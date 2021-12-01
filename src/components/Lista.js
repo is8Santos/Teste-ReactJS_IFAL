@@ -41,7 +41,9 @@ const Lista = () => {
                 <tbody>
                     { newTarefa.map((t, index) => (
                         <tr key={index}>
-                            <input type="checkbox" /> {t}
+                            <td>
+                            <input type="checkbox"/>{t}
+                            </td>
                         </tr>
                     ))}
                 </tbody>

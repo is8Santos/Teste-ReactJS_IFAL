@@ -2,7 +2,7 @@ import React from 'react'
 
 import { fireEvent, render, waitFor } from '@testing-library/react'
 
-import Lista from './Lista'
+import Lista from '../components/Lista'
 
 describe('Tests para  o componete Lista', () => { // é descrição do que teste
     it('Should add new task when form has been submitted', async () => { // é o que p teste irá fazer

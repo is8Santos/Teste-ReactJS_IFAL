@@ -1,4 +1,6 @@
+import "./Lista.css"
 import React, { useState } from 'react'
+
 
 const Lista = () => {
     const [tarefa, setTarefa] = useState('')
@@ -15,7 +17,8 @@ const Lista = () => {
     }
 
     return (
-        <>
+        <div>
+            <div className="Container-Geral">
             <form onSubmit={handleFormSubmit}>
                 <input
                     data-testid="form-field"
@@ -30,8 +33,11 @@ const Lista = () => {
                 >Adicione nova Terafa
                 </button>
             </form>
+            </div>
 
-            
+
+
+            <div  className="Container-Geral">
             <table data-testid="table">
                 <thead>
                     <tr>
@@ -48,7 +54,8 @@ const Lista = () => {
                     ))}
                 </tbody>
             </table>
-        </>
+            </div>
+        </div>
     )
 }
 

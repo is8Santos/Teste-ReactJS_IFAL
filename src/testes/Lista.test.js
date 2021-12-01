@@ -30,8 +30,8 @@ describe('Tests para  o componete Lista', () => {
 
 //vivi
         const checkTablee = await waitFor(
-            () => getByText(valueTesting)
+            () => getByText(testagem)
         )
-        expect(checkTable).toBeDefined()
+        expect(checkTablee).toBeDefined()
     })
 })

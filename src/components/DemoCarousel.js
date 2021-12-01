@@ -11,7 +11,7 @@ import { Carousel } from 'react-responsive-carousel';
 export default class DemoCarousel extends Component {
     render() {
         return (
-            <Carousel>
+            <Carousel >
                 <div>
                     <img src={pweb} alt="Imagem de uma materia do if" />
                     <p className="legend">Legend 3</p>

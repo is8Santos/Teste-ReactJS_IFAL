@@ -19,8 +19,9 @@ const Lista = () => {
     return (
         <div>
             <div className="Container-Geral">
-            <form onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit} className="Container-form">
                 <input
+                    className="input"
                     data-testid="form-field"
                     onChange={handleInputChange}
                     placeholder="Tarefa"
@@ -28,6 +29,7 @@ const Lista = () => {
                     value={tarefa}
                 />
                 <button
+                    className="botao"
                     data-testid="form-btn"
                     type="submit"
                 >Adicione nova Terafa
@@ -41,14 +43,14 @@ const Lista = () => {
             <table data-testid="table">
                 <thead>
                     <tr>
-                        <th>Lista de Tarefas</th>
+                        <th><h1 style={{color:"#fff"}}>Lista de Tarefas</h1></th>
                     </tr>
                 </thead>
                 <tbody>
                     { newTarefa.map((t, index) => (
                         <tr key={index}>
-                            <td>
-                            <input type="checkbox"/>{t}
+                            <td style={{color:"#fff"}}>
+                            <input type="checkbox"/> {t}
                             </td>
                         </tr>
                     ))}

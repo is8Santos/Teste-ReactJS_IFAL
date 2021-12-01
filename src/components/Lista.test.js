@@ -29,7 +29,7 @@ describe('Tests para  o componete Lista', () => {
 
 
 //vivi
-        const checkTable = await waitFor(
+        const checkTablee = await waitFor(
             () => getByText(valueTesting)
         )
         expect(checkTable).toBeDefined()
